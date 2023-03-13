@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bootstrap Assignment 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <script src='main.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+       /* .img{
+            z-index:0;
+        }
+        .text-over-img{
+            z-index:1;
+            font-size:2.5em;
+            top:80%;
+            color:black;
+        }*/
+        .cross{
+            width: 40px;
+            height: 40px;
+        }
+        .bg-change{
+            background-color: #7749F8;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            
+            <a  class="navbar-brand" href="#">
+                <img src="image/gemlogo.png" alt="" width="40" height="30">
+                Gemini Solutions
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:blue;">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:blue;">Community</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: blue;">Support</a>
+                    </li>
+                  </ul>
+            
+                  
+                    <button type="button" class="btn btn-outline-primary m-2" >Login</button>
+                    <button class="btn btn-primary m-2 " type="button">Register</button>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/gemlogo.png" alt="" width="40" height="30">
+            Gemini Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Support</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-primary m-2" type="submit">Login</button>
+                    <button class="btn btn-primary m-2" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </nav>-->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('https://t3.ftcdn.net/jpg/01/94/19/10/360_F_194191051_kvQzg0VitRXOYCG7l7h28tjtB4VD7JMh.jpg');height: 100vh;background-position:center; background-repeat: no-repeat; background-size: cover;"> <div class="container"><p class="mb-3  text-black text-center" style="font-size:2.5em ">The largest community of photo enthusiasts</h1><div class="d-flex justify-content-center "> <button type="button" class="btn btn-primary text align-items-center">Join Today</button></div> </div> </div>
+                <!--<img src="image/web.png" class="img-fluid img">
+                <div class="carousel-caption" >
+                    <p class="text-over-img">The largest community of photo enthusiast.</p>
+                    <button class="btn btn-primary" type="button">Join</button>
+                </div>
+            -->
+                
+            </div>
+        </div>
+        <div class="row pt-5 m-0">
+            <div class="col-6">
+            <p style="font-size:2.5em";>Snap photos and share like never before.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+               
+               <p><b>Sed ut perspiciatis</b></p>
+               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+               <!--<button type="button" class="btn btn-outline-primary" >Learn More</button>-->
+            </div>
+            <div class="col-6">
+                <p><b>Lorem ipsum dolor</b></p>
+                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <!--<button type="button" class="btn btn-outline-primary" >Learn More</button>-->
+ 
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary" >Learn More</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary" >Learn More</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 ">
+                <p><b>Nemo enim ipsam</b></p>
+                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                <!--<button type="button" class="btn btn-outline-primary" >Learn More</button>-->
+             </div>
+             <div class="col-6">
+                 <p><b>Tempor incididunt</b></p>
+                <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                <!--<button type="button" class="btn btn-outline-primary" >Learn More</button>-->
+ 
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary" >Learn More</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-primary" >Learn More</button>
+            </div>
+        </div>
+        <div class="row" style="padding-top:50px;">
+            <div col="12">
+                <div class="text-center">
+                <p style="font-size: 2.5em;">Ready to take a free trial?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                <p>tempor incididunt ut labore</p>
+                <p style="font-size: 2.5em;">Subscribe for free</p>
+                </div>
+            </div>
+        </div>
+        <form action="" method="post"  class="mb-3 border border-dark p-3">
+            <div class=" row mb-3">
+                <div class="col">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" id="fname" class="form-control form-control-lg" placeholder="Enter the first name" required >
+                </div>
+                <div class="col">
+                    <label for="mname" class="form-label">Middle Name</label>
+                    <input type="text" id="mname" class="form-control form-control-lg" placeholder="Enter the middle name" required >
+                </div>
+                <div class="col">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" id="lname" class="form-control form-control-lg" placeholder="Enter the last name" required >
+                </div>
+
+            </div>
+            <div class=" row mb-3">
+                <div class="col">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control form-control-lg form-select" required >
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                </div>
+                <div class="col">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" id="age" class="form-control form-control-lg" placeholder="Enter the age" required >
+                </div>
+                <div class="col">
+                    <label for="phonenum" class="form-label">Contact Number</label>
+                    <input type="tel" id="phonenum" class="form-control form-control-lg" pattern="[0-9]{10}"placeholder="Enter the contact number" required >
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                        <label for="address">Address:</label>
+                        <textarea id="address" class="form-control input-lg" rows="4" col="10" required > Write your message here</textarea>
+                        
+                </div>
+            </div>
+            <div class="text-center">
+            <button type="button" class="btn btn-outline-primary " >Submit</button>
+            </div>
+        </form>
+
+      <div class="border border-dark-subtle p-3 mb-3">
+        <div class="row mb-4 ">
+            <div class="col-6">
+                <img src="image/tree1.png" class="img-fluid">
+            </div>
+            <div class="col-6">
+                <!--<button type="button" class="btn btn-light " >Submit</button>
+                <button type="button" class="btn btn-light " >Submit</button>
+                <button type="button" class="btn btn-light " >Submit</button>-->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                <p style="font-size:1.5vw">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williams burg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamc atcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+        </div>
+        </div>
+        <div class="border border-dark-subtle mb-3 p-3">
+        <div class="row mb-4">
+            <div class="col-6">
+            <!--<div class="p-2 border border-dark rounded-3">
+                <div >
+                   <p><b>Accordion Item #1</b><ion-icon name="chevron-up-outline" style="float:right;"></ion-icon></span></p>
+                </div>
+                <hr>
+                <div>
+                <p  class="m-0" style="font-size: 1.5vw;">This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                 appearance, as well as the showing and hiding via CSS transitions.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b>Accordion Item #2</b><ion-icon name="chevron-up-outline" style="float:right;"></ion-icon></span></p>
+                </div>
+                <hr>
+                <div>
+                    <p><b>Accordion Item #3</b><ion-icon name="chevron-up-outline" style="float:right;"></ion-icon></span></p>
+                </div>
+            </div>-->
+            <div class="accordion" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-6">
+                <img src="image/tree2.png" class="img-fluid">
+            </div>
+        </div>
+        </div>
+        <div class="border border-dark-subtle mb-3">
+        <div class="row mb-4">
+            <div class="col-12">
+                <p class="text-center m-0" style="color:black; font-size: 2.5vw;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p> 
+            <p class="text-center" style="color:black; font-size: 2.5vw;">tempor incididunt ut labore</p>
+            <center><ion-icon name="close-circle-outline" class="cross"></ion-icon></center>
+            <p class="text-center">Nemo enim ipsam</p>
+            </div>
+        </div>
+        </div>
+        <div class="border border-dark-subtle p-4 ">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center" style="font-size: 40px;;">You’re in good company</p>
+                <p class="text-center m-0" style="color:black; font-size: 2.5vw;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p> 
+            <p class="text-center" style="color:black; font-size: 2.5vw;">tempor incididunt ut labore</p>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Cras justo odio
+                          <span class="badge bg-change rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Dapibus ac facilisis in
+                          <span class="badge bg-change rounded-pill">54</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Morbi leo risus
+                          <span class="badge bg-change rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Porta ac consectetur ac
+                            <span class="badge bg-change rounded-pill">123</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Vestibulum at eros
+                            <span class="badge bg-change rounded-pill">65</span>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Cras justo odio
+                          <span class="badge bg-change rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Dapibus ac facilisis in
+                          <span class="badge bg-change rounded-pill">54</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Morbi leo risus
+                          <span class="badge bg-change rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Porta ac consectetur ac
+                            <span class="badge bg-change rounded-pill">123</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Vestibulum at eros
+                            <span class="badge bg-change rounded-pill">65</span>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Cras justo odio
+                          <span class="badge bg-change rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Dapibus ac facilisis in
+                          <span class="badge bg-change rounded-pill">54</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Morbi leo risus
+                          <span class="badge bg-change rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Porta ac consectetur ac
+                            <span class="badge bg-change rounded-pill">123</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Vestibulum at eros
+                            <span class="badge bg-change rounded-pill">65</span>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Cras justo odio
+                          <span class="badge bg-change rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Dapibus ac facilisis in
+                          <span class="badge bg-change rounded-pill">54</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Morbi leo risus
+                          <span class="badge bg-change rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Porta ac consectetur ac
+                            <span class="badge bg-change rounded-pill">123</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Vestibulum at eros
+                            <span class="badge bg-change rounded-pill">65</span>
+                        </li>
+                      </ul>
+                </div>
+
+            </div>
+            <!--<div class="row ">
+                <div class="col m-2 border border-dark-subtle">
+                    <p>Cras justo odio</p>
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+            </div>
+            <div class="row mb-0">
+                <div class="col m-2 border border-dark-subtle">
+                    <p>Cras justo odio</p>
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col m-2 border border-dark-subtle">
+                    <p>Cras justo odio</p>
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m-2 border border-dark-subtle">
+                    <p>Cras justo odio</p>
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 m-1" style="float:right; background-color: #7749F8;">12</button>
+                </div>
+                <div class="col m-2 border border-dark-subtle">
+                    <button type="button" class="btn btn-light me-5">Cras justo odio</button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-4 ms-5" style="background-color: #7749F8;">12</button>
+                </div>
+            </div>-->
+            
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
